@@ -1,0 +1,47 @@
+html, body, p{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    height: 10vh;
+    background-color: darkslateblue;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+section{
+    height: 70vh;
+    background-color: darkslateblue;
+    width: 40%;
+}
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.img{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 0.5em;
+    margin: 0 1em;
+}

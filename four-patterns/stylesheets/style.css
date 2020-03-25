@@ -1,0 +1,105 @@
+/* GENERAL SETTINGS */
+
+html {
+  font-size: 16px; /* give the html a font size so that you can use rem later one */
+}
+
+* { /* getting rid of browsers' default settings */
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+  display:flex;
+  justify-content: center; /* centering the title using flex */
+}
+
+.flex-row { /* I create this class and reuse because many of my elements have those settings */
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.flex-column {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+/* PHOTO GALLERY */
+
+/* .photos div */
+.photo {
+  width: 300px;
+  min-height: 200px;
+  border: 1px solid black;
+  margin: 10px
+}
+
+/* SHOPPING CARDS */
+
+.card {
+  height: 400px;
+  width: 300px;
+  border: 1px solid black;
+  margin: 20px;
+  text-align:center;
+}
+
+.card p {
+  padding:10px
+}
+
+/* Holy grail */
+
+#holy-grail {
+  margin:20px
+}
+
+.header, .footer {
+  background-color:rgb(214, 210, 210);
+  height: 5vh;
+  width: 100%;
+}
+
+.main {
+  display:flex;
+  height: 50vh;
+}
+
+.main nav, .main aside {
+  background-color: grey;
+  height:100%;
+  flex: 1; /*we want the nav and the aside to take up 1 space ... */
+}
+
+.main article {
+  flex:3 /*... and the article to take up 3 */
+}
+
+/* STREAM FEED */
+
+.tweet {
+  display:flex;
+  align-items:center;
+  width: 600px;
+  padding: 10px 0;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.text-box {
+  display:flex;
+  flex-direction: column;
+  width: 550px;
+  margin-left: 10px;
+  border: 1px solid black;
+  padding:5px;
+}
